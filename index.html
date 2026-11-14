@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arctos Racing workshop</title>
+<meta name="theme-color" content="#10243a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#/overview" aria-label="Arctos Racing overview">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8 54 56H43l-3.6-9H24.6L21 56H10L32 8Zm0 20-4.6 11.5h9.2L32 28Z" fill="currentColor"/><path d="M6 60h52" stroke="#5db7ff" stroke-width="4"/></svg>
+      <span>Arctos Racing</span>
+    </a>
+    <nav id="nav" aria-label="Sections"></nav>
+    <a id="sync-pill" class="pill" href="#/settings"></a>
+  </div>
+</header>
+<main id="view" tabindex="-1"></main>
+<dialog id="dlg"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<input type="file" id="import-file" accept="application/json,.json" hidden>
+<script src="app.js"></script>
+</body>
+</html>
